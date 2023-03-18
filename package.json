@@ -50,7 +50,18 @@
   ],
   "dependencies": {
     "accessor-fn": "1",
-    "three-forcegraph": "^1.41"
+    "three-forcegraph": "^1.41",
+
+
+    "d3-array": "1 - 3",
+    "d3-force-3d": "2 - 3",
+    "d3-scale": "1 - 4",
+    "d3-scale-chromatic": "1 - 3",
+    "data-joint": "^1.3",
+    "kapsule": "^1.14",
+    "ngraph.forcelayout": "^3.3",
+    "ngraph.graph": "^20.0",
+    "tinycolor2": "^1.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
