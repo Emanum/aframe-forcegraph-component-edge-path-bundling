@@ -84,6 +84,7 @@ AFRAME.registerComponent('forcegraph', {
     linkDirectionalParticleWidth: { parse: parseAccessor, default: 0.5 },
     linkDirectionalParticleColor: { parse: parseAccessor, default: null },
     linkDirectionalParticleResolution: { type: 'number', default: 4 }, // how many slice segments in the particle sphere's circumference
+    linkBundling: {type: 'string',  default: 'none' }, // none or edgepath
     onNodeHover: { parse: parseFn, default: () => {} },
     onLinkHover: { parse: parseFn, default: () => {} },
     onNodeClick: { parse: parseFn, default: () => {} },
@@ -238,6 +239,7 @@ AFRAME.registerComponent('forcegraph', {
       'linkDirectionalParticleWidth',
       'linkDirectionalParticleColor',
       'linkDirectionalParticleResolution',
+      'linkBundling',
       'forceEngine',
       'd3AlphaMin',
       'd3AphaDecay',
