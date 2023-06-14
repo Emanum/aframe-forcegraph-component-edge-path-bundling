@@ -179,6 +179,7 @@ AFRAME.registerComponent('forcegraph', {
       .onLoading(() => state.infoEl.setAttribute('value', 'Loading...')) // Add loading msg
       .onFinishLoading(() => state.infoEl.setAttribute('value', ''));
 
+    this.forceGraph.camera = state.cameraObj
     // prefer raycaster events over mouseenter/mouseleave because they expose immediately available intersection data via detail.getIntersection()
     this.el.addEventListener('raycaster-intersected', ev => state.hoverDetail = ev.detail);
     this.el.addEventListener('raycaster-intersected-cleared', ev => state.hoverDetail = ev.detail);
